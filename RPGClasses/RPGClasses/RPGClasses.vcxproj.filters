@@ -13,6 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Items">
+      <UniqueIdentifier>{4765a4d1-79c0-449f-9929-912dbf85d7e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Items\Weapons">
+      <UniqueIdentifier>{f3dc7247-258e-4cae-8139-c71b28d81e53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Items\Armors">
+      <UniqueIdentifier>{dc9b6fb7-ac0c-4f38-8414-48f57994ea55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Items">
+      <UniqueIdentifier>{90ad7073-dd41-4c66-8f5f-2dd6d721a4c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Items\Weapons">
+      <UniqueIdentifier>{f945cda1-4017-409b-b21b-8f4da895eb5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Items\Armors">
+      <UniqueIdentifier>{2d4a2f2f-493f-423b-9de0-26d120838841}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Enemy.h">
@@ -24,8 +42,26 @@
     <ClInclude Include="Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Weapon.h">
+    <ClInclude Include="InputHelper.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Header Files\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Header Files\Items\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Armor.h">
+      <Filter>Header Files\Items\Armors</Filter>
+    </ClInclude>
+    <ClInclude Include="Sword.h">
+      <Filter>Header Files\Items\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Axe.h">
+      <Filter>Header Files\Items\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="NoWeapon.h">
+      <Filter>Header Files\Items\Weapons</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -35,11 +71,29 @@
     <ClCompile Include="Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Weapon.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Enemy.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="item.cpp">
+      <Filter>Source Files\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Armor.cpp">
+      <Filter>Source Files\Items\Armors</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Source Files\Items\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Sword.cpp">
+      <Filter>Source Files\Items\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Axe.cpp">
+      <Filter>Source Files\Items\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="NoWeapon.cpp">
+      <Filter>Source Files\Items\Weapons</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

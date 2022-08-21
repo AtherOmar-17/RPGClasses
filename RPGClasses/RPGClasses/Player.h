@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "Weapon.h"
+#include "Armor.h"
 
 class Player
 {
@@ -14,7 +15,7 @@ public:
 	void ChooseArmor();
 
 	Weapon* GetWeapon() { return m_weapon; }
-	int GetArmor() { return m_armor; }
+	Armor* GetArmor() { return m_armor; }
 
 	int GetHealth() const { return m_health; }
 
@@ -22,11 +23,13 @@ public:
 
 	void TakeDamage(int damage);
 
+	void Rest();
+
 private:
 
 	std::string m_name;
 	int m_health;
 	int m_maxHealth;
 	Weapon* m_weapon;
-	int m_armor;
+	Armor* m_armor;
 };

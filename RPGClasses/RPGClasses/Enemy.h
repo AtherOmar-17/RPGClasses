@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "Weapon.h"
+#include "Armor.h"
 
 class Enemy
 {
@@ -10,7 +11,7 @@ public:
 	~Enemy();
 
 	Weapon* GetWeapon() { return m_weapon; }
-	int GetArmor() { return m_armor; }
+	Armor* GetArmor() { return m_armor; }
 
 	int GetHealth() { return m_health; }
 
@@ -22,5 +23,5 @@ private:
 
 	int m_health;
 	Weapon* m_weapon;
-	int m_armor;
+	Armor* m_armor;
 };

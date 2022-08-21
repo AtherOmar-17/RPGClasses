@@ -1,29 +1,33 @@
 #pragma once
-#include <string>
+#include "Item.h"
 
-class Weapon
+class Weapon : public Item
 {
 public:
 
-	static const int g_weaponNone = 0;
-	static const int g_weaponSword = 1;
-	static const int g_weaponAxe = 2;
-	static const int g_weaponMax = 3;
+	enum WeaponType
+	{
+		None = 0,
+		Sword,
+		Axe,
+		Max
+	};
 
 public:
 
-	Weapon();
-	Weapon(int weaponType);
+	Weapon(std::string name);
 	~Weapon();
 
 	int GetDamage();
-	void UpdateWeaponStats(int weapon);
 
-	std::string GetName() { return m_name; }
+	WeaponType GetType() { return m_type; }
 
-private:
+protected:
 
-	std::string m_name;
+	static int m_numWeapons;
+
+	WeaponType m_type;
+
 	int m_minDamage;
 	int m_maxDamage;
 };
